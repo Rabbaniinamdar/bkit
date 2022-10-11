@@ -42,7 +42,7 @@
   min-height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
-    url("../Project/images/bkit2.jpg");
+    url("images/bkit2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -299,7 +299,7 @@ h3 {
 
 .bac-img {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(15, 1, 1, 0.673)),
-    url("../Project/images/bkit1.jpg");
+    url("images/bkit1.jpg");
   background-position: center;
   background-size: cover;
   height: 50vh;

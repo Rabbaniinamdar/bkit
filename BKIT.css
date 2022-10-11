@@ -1,0 +1,438 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  margin-top: 0xp;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 1.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-facebook:hover{
+  background-color: blue;
+}.fa-instagram:hover{
+  background-color: orangered;
+}.fa-twitter:hover{
+  background-color: cyan;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+/* Home page */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
+    url("../Project/images/bkit2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  display: fleX;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  height: 15px;
+  /* background: linear-gradient(rgb(44, 32, 27), rgba(106, 96, 102, 0.7)); */
+  background-color:rgb(227, 94, 45);
+  height: 20px;
+  top: 0px;
+}
+
+.text-box img {
+  width: 80px;
+  position: relative;
+  top: 7px;
+}
+.nav-link {
+  flex: 1;
+  text-align: right;
+  top: 0px;
+}
+.nav-link li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  top: -10px;
+  right: 37%;
+}
+.nav-link li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+}
+.nav-link li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:midnightblue;
+  display: block;
+  margin: auto;
+  transition: 1s ease;
+}
+.nav-link li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.text-box h1 {
+  font-size: 3rem;
+}
+.text-box p {
+  font-size: 15px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px 13px;
+  margin: 40px;
+  position: relative;
+  cursor: pointer;
+  font-size: 13px;
+  width: 200px;
+}
+.hero-btn:hover {
+  border: 1px solid orangered;
+  background-color: rgba(255, 68, 0, 0.781);
+  transition: 1s;
+}
+.cr {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+/* <!-- course page --> */
+
+.course {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.c-p {
+  color: rgb(23, 20, 20);
+  font-size: 16px;
+  font-weight: 300px;
+  line-height: 22px;
+  padding: 10px;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.course-col {
+  background-color: antiquewhite;
+  flex-basis: 28%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 1s;
+  cursor: pointer;
+}
+.course-col:hover {
+  box-shadow: 0px 0px 20px 0px black;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* compus page */
+.compus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin: 6% 10%;
+}
+.compus p {
+  margin: 10px;
+}
+.com-col {
+  position: relative;
+  flex-basis: 31%;
+  overflow: hidden;
+}
+.com-col img {
+  border-radius: 10px;
+  color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background-color: rgba(0, 255, 255, 0.401);
+}
+.layer h3 {
+  color: rgb(255, 255, 255);
+  bottom: 0px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: 1s;
+  font-size: 25px;
+}
+.layer:hover h3 {
+  bottom: 50%;
+  left: 0;
+  position: absolute;
+}
+
+/* <!-- facilitities page --> */
+
+.faciliti {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin: 10%;
+}
+.faciliti p {
+  margin: 10px;
+}
+.faciliti img {
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+  transition: 1s;
+}
+.faciliti img:hover {
+  box-shadow: 0px 0px 20px 2px black;
+}
+.makichot {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  align-items: center;
+}
+/* <!-- Feedback page --> */
+.stu-s {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+}
+.stu-s p {
+  margin-top: 2%;
+}
+.rows2 {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+}
+.u-feed {
+  background-color: rgba(250, 235, 215, 0.321);
+  margin-top: 5%;
+  display: flex;
+  flex-basis: 42%;
+  margin-bottom: 5%;
+  padding: 24px;
+  text-align: left;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.u-feed:hover {
+  box-shadow: 0 0 20px 0 black;
+}
+.h3 {
+  text-align: left;
+}
+.u-feed img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.bac-img {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(15, 1, 1, 0.673)),
+    url("../Project/images/bkit1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 80%;
+  margin: 5% 10%;
+  border-radius: 10px;
+}
+.bac-img h1 {
+  color: #fff;
+  text-align: center;
+  padding: 8%;
+  font-size: 2rem;
+}
+.bac-img a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid white;
+  transition: 1s;
+  position: relative;
+  left: 43%;
+  top: -10%;
+  outline: none;
+}
+.bac-img a:hover {
+  background-color: rgba(255, 68, 0, 0.826);
+  border: none;
+}
+.abt {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.abt h2 {
+  margin: 30px;
+}
+.abt p {
+  color: rgba(0, 0, 0, 0.532);
+}
+@media (max-width: 700px) {
+  .cr {
+    display: block;
+    width: 50px;
+  }
+  .bar {
+    width: 24px;
+    height: 2px;
+    margin: 4px;
+    background-color: orangered;
+    border-radius: 10px;
+  }
+  .menu {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .text-box h1 {
+    font-size: 24px;
+  }
+  .nav-link li {
+    display: block;
+    width: 130px;
+  }
+  .nav-link {
+    position: absolute;
+    background-color: orangered;
+    height: 100vh;
+    width: 120px;
+    top: -10px;
+    right: 0px;
+    text-align: center;
+    z-index: 1;
+  }
+  .nav-link {
+    transition: all 1s ease-in;
+    display: none;
+  }
+  .nav-link li:hover::after {
+    width: 49%;
+  }
+  nav {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    background: none;
+  }
+  .text-box p {
+    font-size: 16px;
+  }
+
+  .rows {
+    flex-direction: column;
+  }
+  .compus h1 {
+    margin-top: 20%;
+  }
+  .faciliti {
+    margin-top: 25%;
+  }
+  .rows2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50%;
+  }
+  .bac-img h1 {
+    padding: 15%;
+    /* width: 70%; */
+    font-size: 1.2rem;
+  }
+  .bac-img {
+    position: relative;
+    top: -100px;
+    height: 35vh;
+  }
+  .bac-img a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 70px;
+    top: 5px;
+  }
+  .abt {
+    margin-top: -100px;
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+  .stu-s {
+    margin-top: 25%;
+  }
+  .u-feed {
+    flex-basis: 38%;
+  }
+}

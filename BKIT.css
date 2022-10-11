@@ -42,7 +42,7 @@
   min-height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
-    url("images/bkit2.jpg");
+    url("../Project/images/bkit2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -299,7 +299,7 @@ h3 {
 
 .bac-img {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(15, 1, 1, 0.673)),
-    url("images/bkit1.jpg");
+    url("../Project/images/bkit1.jpg");
   background-position: center;
   background-size: cover;
   height: 50vh;
@@ -355,7 +355,7 @@ h3 {
   .menu {
     cursor: pointer;
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: 10px;
   }
   .text-box h1 {
@@ -363,15 +363,17 @@ h3 {
   }
   .nav-link li {
     display: block;
-    width: 130px;
+    /* width: 80px; */
+    position: relative;
+    right: 8px;
   }
   .nav-link {
     position: absolute;
     background-color: orangered;
     height: 100vh;
-    width: 120px;
+    /* width: 100px; */
     top: -10px;
-    right: 0px;
+    right: -30px;
     text-align: center;
     z-index: 1;
   }
@@ -385,7 +387,7 @@ h3 {
   nav {
     position: relative;
     top: 10px;
-    width: 100%;
+    width: 80%;
     background: none;
   }
   .text-box p {
